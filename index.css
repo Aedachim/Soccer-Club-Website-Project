@@ -1,0 +1,339 @@
+/* in general */
+
+* {
+    box-sizing: border-box;
+    scroll-padding-top: 4.5rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+
+img {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 4.5rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Class */
+
+.content {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.title {
+    width: 100%;
+    padding: 2.5rem;
+    font-family: serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Header/ nav */
+
+#headercontainer {
+     width: 100%;
+     background-color: rgb(57, 168, 57);
+}
+
+
+nav {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: #ffffff 2px solid;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: default;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .naviga ul, 
+nav .icons ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+nav .naviga ul li a:hover,
+nav .icons ul li a:hover {
+    color: yellow;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav .naviga ul li a:active,
+nav .icons ul li a:active {
+    color: #ffffff;
+}
+
+nav .naviga ul li a:visited,
+nav .icons ul li a:visited {
+    color: purple;
+}
+
+nav .naviga {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .naviga ul {
+    justify-content: flex-start;
+}
+
+nav .naviga ul li {
+    margin: 0 0.75rem;
+    justify-content: flex-start;
+    clear: left;
+}
+
+nav .naviga ul li a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+nav .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .icons ul {
+    justify-content: flex-end;
+}
+
+nav .icons ul li {
+    margin: 0 1rem;
+}
+
+
+/* middle section/ main part */
+
+#middle .title,
+#middle .sidetitle {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(215deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0)70%);
+    padding: 1rem 0.75rem;
+}
+
+#middle .title h3 {
+    text-transform: uppercase;
+}
+
+#middle .maincontainer {
+    width: 100%;
+    height: 80%;
+    padding: 2.5rem 1.7rem; 
+    background-attachment: fixed;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#middle .maincontainer .content {
+    display: inline-flex;
+    flex-direction: column;
+    background-image: linear-gradient(215deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0) 70%), linear-gradient(125deg, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0) 70%), linear-gradient(335deg, rgba(0, 183, 255, 0.8), rgba(0, 183, 255, 0) 70%);
+    opacity: 1;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 26%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#middle .maincontainer .content .pics {
+    width: 16rem;
+}
+
+#middle .maincontainer .content .label {
+    text-transform: capitalize;
+}
+
+#zitat {
+    background-color: rgba(57, 168, 57);
+}
+
+#zitat .zitatcontainer .title,
+#zitat .zitatcontainer .sidetitle {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+#gallery {
+    background-image: linear-gradient(215deg, rgba(255, 166, 0, 0.8), rgba(255, 166, 0, 0)70%);
+}
+
+#gallery .gallerycontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#gallery .gallerycontainer .content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gallery .gallerycontainer .content .pics {
+    width: 15rem;
+}
+
+#gallery .gallerycontainer .imagei {
+    width: 80%;
+}
+
+#bottom {
+    width: 100%;
+    background-color: rgb(57, 168, 57);
+}
+
+nav {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-top: #ffffff 2px solid;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+}
+
+nav .downfooter {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: default;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+nav .downfooter ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-top: #ffffff 2px solid;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+
+}
+
+nav .downfooter ul li {
+    margin: 0 0.75rem;
+    justify-content: flex-start;
+    clear: left;
+}
+
+nav .downfooter ul li a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 841px) and (max-width: 960px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    * {
+        scroll-padding-top: 4.5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 721px) and (max-width: 840px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    * {
+        scroll-padding-top: 4rem;
+    }
+
+}
